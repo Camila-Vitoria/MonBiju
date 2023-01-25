@@ -1,0 +1,130 @@
+/*body{
+    display: grid;
+    background-color: rgb(241, 240, 240);
+    margin: 0;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header header header"
+    "h1 h1 h1"
+    "anel colar brinco cruz pulseira"
+    
+    "footer footer footer footer ";
+    grid-template-rows: 20px 1fr 1fr  20px;
+    grid-template-columns: 1fr 40px;
+    font: italic 3em/1.5 Arial, Sans-serif;
+}
+
+h1{
+    grid-area: h1;
+}
+anel{
+    grid-area: anel;
+}
+footer{
+    grid-area: footer;
+    background-color: rgba(167, 172, 169, 0.726);
+
+}*/
+@import url('https://fonts.googleapis.com/css2? family=Rouge+Script&display=swap');
+*{
+margin: 0;
+/*box-sizing: border-box;*/
+}
+header{
+    padding: 1rem;  
+    background-image:linear-gradient(90deg,rgb(211, 211, 200), rgb(170, 190, 195)); 
+    color: #545450;
+    background-attachment: fixed;
+}
+
+span{
+    display: inline;
+    justify-content: center;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #41413e65;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}  
+#logo{
+    width: 60px;
+    height: 50px;
+    position: relative;
+    top: 15px;  
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: .8rem;
+}
+button{
+    width: 40px;
+    height: 40px;
+}
+#lupa{
+    width: 30px;
+    height: 35px;
+}
+body{
+    justify-content: center;
+    align-items: center;
+  background-color: #F2F2E6;
+ }
+.container{
+    display: flex;
+    gap: 1rem;
+}
+/*não é apropriado colocar sombra no h1*/
+h1{
+   display: flex;
+   color: #8a8a85;
+   margin: auto; 
+   justify-content: center;
+  /*position: relative;
+  left: 40%;*/
+  text-shadow: 1px 1px 1px #6b6b67ad;
+  font-family: 'Rouge Script', cursiva;
+  
+}
+/*Acrescentei esse código para testar durante o módulo 15*/
+#contato{
+    text-decoration: none;
+    color: rgb(95, 97, 97);
+}
+
+#search{
+    
+   position: relative; 
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+#pulseira, #cruz, #brinco, #colar, #anel{
+   /* */
+    border: 1px solid #DEDED3;
+   /* border: 1px solid rgba(206, 211, 207, 0.411);*/
+    margin: 2%;
+    padding: 5px 4px 40px 4px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 5px 8px 10px #a3a39bd2;
+    /*left: 25%;
+    top: 55%;*/
+ }
+
+
+footer{
+    margin-top: auto;
+    background-color: rgb(211, 211, 200);
+    height: 2em;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #545450;
+}
